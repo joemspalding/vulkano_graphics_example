@@ -224,17 +224,17 @@ fn main()  {
     // #endregion
 
     // #region set up pipeline
-    let pipeline = Arc::new(
-        GraphicsPipeline::start()
-            .vertex_input_single_buffer()
-            .vertex_shader(vs.main_entry_point(), ())
-            .triangle_list()
-            .viewports_dynamic_scissors_irrelevant(1)
-            .fragment_shader(fs.main_entry_point(), ())
-            .render_pass(Subpass::from(render_pass.clone(), 0).unwrap())
-            .build(device.clone())
-            .unwrap(),
-    );
+    // let pipeline = Arc::new(
+    //     GraphicsPipeline::start()
+    //         .vertex_input_single_buffer()
+    //         .vertex_shader(vs.main_entry_point(), ())
+    //         .triangle_list()
+    //         .viewports_dynamic_scissors_irrelevant(1)
+    //         .fragment_shader(fs.main_entry_point(), ())
+    //         .render_pass(Subpass::from(render_pass.clone(), 0).unwrap())
+    //         .build(device.clone())
+    //         .unwrap(),
+    // );
     // #endregion
 
     // #region event loop
